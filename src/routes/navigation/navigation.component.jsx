@@ -16,6 +16,7 @@ import {
   LogoContainer,
   NavLinks,
   NavLink,
+  MainTitle,
 } from "./navigation.styles";
 
 const Navigation = () => {
@@ -30,7 +31,9 @@ const Navigation = () => {
       <NavigationContainer>
         <LogoContainer to="/">
           <CrownLogo className="logo" />
+          <MainTitle>Nash Clothing</MainTitle>
         </LogoContainer>
+
         <NavLinks>
           <NavLink to="shop">SHOP</NavLink>
           {currentUser ? (
